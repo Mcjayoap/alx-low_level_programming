@@ -1,30 +1,33 @@
- #include <stdio.h>
+#include <stdio.h>
 
 /**
- * main - Prints all possible different combinations of numbers from 00 t0 99, numbers
- * seperated by a comma followed by a space, in ascending order.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int digit1, digit2;
-
-	for (digit1 = 0; digit1 < 10; digit1++)
+	int d = 48, a = 48;
+	while (d < 58)
 	{
-		for (digit2 = 0; digit2 < 10; digit2++)
+		a = 48;
+		while (a < 58)
 		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
-
-			if (digit1 == 8 && digit2 == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			if (d != a && d < a)
+			{
+				putchar(d);
+				putchar(a);
+				
+				if (!(d == 56 && a == 57))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			a++;
 		}
+		d++;
 	}
-
 	putchar('\n');
 
 	return (0);
