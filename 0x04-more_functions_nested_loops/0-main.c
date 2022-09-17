@@ -7,7 +7,7 @@
  * Return: Always 0.
  */
 
-int main(voi)
+int main(void)
 {
 	char c;
 
