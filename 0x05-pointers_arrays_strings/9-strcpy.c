@@ -16,7 +16,7 @@ char *_strcpy(char *dest, char *src)
 		*(dest + inc)  =  *(src + inc);
 		inc++;
 	}
-	*(desk + inc) = '\0';
+	*(dest + inc) = '\0';
 
 	return (dest);
 }
