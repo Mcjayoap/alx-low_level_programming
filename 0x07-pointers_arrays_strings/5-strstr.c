@@ -8,7 +8,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	unsigned int, size = 0;
-	
+
 	while (*(needle + size) != 0)
 	{
 		size++;
@@ -29,7 +29,5 @@ char *_strstr(char *haystack, char *needle)
 		}
 		haystack++;
 	}
-
 	return (0);
 }
-					
