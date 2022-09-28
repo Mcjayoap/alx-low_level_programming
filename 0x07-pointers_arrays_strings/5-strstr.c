@@ -7,7 +7,7 @@
  * Return: pointer to the beginning of the located substring
  */
 char *_strstr(char *haystack, char *needle)
-{9
+{
 	for (; *haystack != '\0'; haystack++)
 	{
 		char *one = haystack;
