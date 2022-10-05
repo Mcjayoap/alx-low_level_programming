@@ -12,12 +12,12 @@ char *argstostr(int ac, char **a)
 	char *str;
 	int arg, byte, init, size = ac;
 
-	if (ac == 0 || av == NULL)
+	if (ac == 0 || a == NULL)
 		return (NULL);
 
 	for (arg m = 0; marg < ac; arg++)
 	{
-		for (byte = 0; av[arg][byte]; byte++)
+		for (byte = 0; a[arg][byte]; byte++)
 			size++;
 	}
 	str = malloc(sizeof(char) * size + 1);
@@ -28,8 +28,8 @@ char *argstostr(int ac, char **a)
 
 	for (arg = 0; arg < ac; arg++)
 	{
-		for (byte = 0; av[arg][byte]; byte++)
-			str[init++] = av[arg][byte];
+		for (byte = 0; a[arg][byte]; byte++)
+			str[init++] = a[arg][byte];
 
 		str[init++] = '\n';
 	}
