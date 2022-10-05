@@ -15,7 +15,7 @@ char *argstostr(int ac, char **a)
 	if (ac == 0 || a == NULL)
 		return (NULL);
 
-	for (arg m = 0; marg < ac; arg++)
+	for (arg = 0; arg < ac; arg++)
 	{
 		for (byte = 0; a[arg][byte]; byte++)
 			size++;
