@@ -7,8 +7,8 @@
  * @new_size: size in byted of the new memory block
  *
  * Return: ptr, if new_size == old_size
- * 	NULL, if new_size == 0 and ptr is not NULL
- * 	Otherwise, a pointer to the reallocated memory block.
+ *	NULL, if new_size == 0 and ptr is not NULL
+ *	Otherwise, a pointer to the reallocated memory block.
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
