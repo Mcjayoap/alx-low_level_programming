@@ -8,32 +8,22 @@
  * @str: The string to be added to the list_t list.
  *
  * Return: If the function fails - NULL.
- *	Otherwise - the address of the new element.
+ *	Otherwise - the address of the new 
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	char *dup;
-	int len;
-	list_t *newNode;
+	listint_t *newNode;
 
-	newNode = malloc(sizeof(list_t));
+	if (head == NULL)
+		return (NULL);
+
+	new = malloc(sizeof(listint_t));
 	if (newNode == NULL)
 		return (NULL);
 
-	dup = strdup(str);
-	if (dup == NULL)
-	{
-		free(newNode);
-		return (NULL);
-	}
-	for (len = 0; str[len];)
-		len++;
-
-	newNode->str = dup;
-	newNode->len;
+	newNote->n = n;
 	newNode->next = *head;
-
 	*head = newNode;
-
+	
 	return (newNode);
 }
