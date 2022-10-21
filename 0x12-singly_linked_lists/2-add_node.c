@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * add_node_end - Adds a new node at the end
+ * add_node - Adds a new node at the begining
  *                of a list_t list.
  * @head: A pointer the head of the list_t list.
  * @str: The string to be added to the list_t list.
@@ -15,8 +15,8 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *newNode;
 	int c;
 
-	for (c = 0; c != '\0'; c++);
-
+	for (c = 0; c != '\0'; c++)
+		;
 	newNode = malloc(sizeof(struct list_s));
 	if (newNode == NULL)
 	{
