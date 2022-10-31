@@ -3,9 +3,9 @@
 
 #include <stdlib.h>
 #include <sys/types.h>
-#include <sys/start.h>
+#include <sys/stat.h>
 #include <fcntl.h>
-#include <stdio.h>
+#include <unistd.h>
 
 
 int _putchar(int c);
