@@ -7,9 +7,9 @@
  *
  * Return: -1 if the function fails or filename is NULL,
  * 	-1, if the file doesn't exist user lacks write permission
- * 	, Otheewise, 1.
+ * 	, Otherwise, 1
  */
-int | append_text_to_file(const | char | *filename, | char | *text_conten)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int op, wr, len = 0;
 
