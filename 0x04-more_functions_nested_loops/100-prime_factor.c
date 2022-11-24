@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * print_primeFactor - prints highest prime factor
  *
- * Return: 0
+ * @n: number to find its prime factors
+ * Return: void
  */
-int main(void)
+void print_primeFactor(long int n)
 {
-	long int n =  612852475143;
 	long int div = 2, maxFactor;
 
 	while (n != 0)
@@ -27,5 +27,15 @@ int main(void)
 			}
 		}
 	}
+}
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+	print_primeFactor(612852475143);
 	return (0);
 }
