@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * print_primeFactor - prints highest prime factor
@@ -8,24 +9,15 @@
  */
 void print_primeFactor(long int n)
 {
-	long int div = 2, maxFactor;
+	int maxFactor;
 
-	while (n != 0)
+	for (maxFactor = (int) sqrt (n); maxFactor > 2; maxFactor++)
 	{
-		if (n % div != 0)
-		{
-			div += 1;
-		}
-		else
-		{
-			maxFactor = n;
-			n = n / div;
-			if (n == 1)
+		if (n % maxFactor == 0)
 			{
-				printf("%ld if the highest prime factor of the number\n", maxFactor);
+				printf("%d if the highest prime factor of the number %ld\n", maxFactor, n);
 				break;
 			}
-		}
 	}
 }
 
